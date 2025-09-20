@@ -1,10 +1,19 @@
-// Typed.js for dynamic intro
-var typed = new Typed('#typed', {
-  strings: ["Hi, I'm Pruthviraj Phadatare – AWS Cloud & DevOps Engineer"],
-  typeSpeed: 40,
+// Typed.js for line-by-line intro
+var typedLine1 = new Typed('#typed-line1', {
+  strings: ["Hi, I'm Pruthviraj Phadatare"],
+  typeSpeed: 60,
   backSpeed: 20,
-  backDelay: 2500,
-  loop: true
+  backDelay: 2000,
+  loop: false,
+  showCursor: true
+});
+var typedLine2 = new Typed('#typed-line2', {
+  strings: ["AWS Cloud & DevOps Engineer"],
+  typeSpeed: 60,
+  startDelay: 2500,
+  backSpeed: 20,
+  loop: true,
+  showCursor: true
 });
 
 // Load dynamic content
