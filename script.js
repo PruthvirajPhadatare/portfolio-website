@@ -29,27 +29,29 @@ fetch('data.json')
   window.addEventListener('load',revealOnScroll);
 });
 
-// Skills animation
+// Skills animation with gradient fill
 function animateSkills(){
   const skills=document.querySelectorAll('.skill-circle');
   skills.forEach(skill=>{
     const percent=skill.getAttribute('data-percent');
     const canvas=document.createElement('canvas');
-    canvas.width=120;canvas.height=120;
+    canvas.width=130;canvas.height=130;
     skill.appendChild(canvas);
     const ctx=canvas.getContext('2d');
-    const radius=50,lineWidth=6;
+    const radius=54,lineWidth=6;
     let current=0;
 
     function drawCircle(p){
-      ctx.clearRect(0,0,120,120);
+      ctx.clearRect(0,0,130,130);
       ctx.beginPath();
-      ctx.arc(60,60,radius,0,2*Math.PI);
+      ctx.arc(65,65,radius,0,2*Math.PI);
       ctx.strokeStyle='rgba(0,217,255,0.2)';
       ctx.lineWidth=lineWidth;ctx.stroke();
+      const grad=ctx.createLinearGradient(0,0,130,0);
+      grad.addColorStop(0,'#00d9ff');grad.addColorStop(1,'#00ffc2');
       ctx.beginPath();
-      ctx.arc(60,60,radius,-Math.PI/2,(-Math.PI/2)+(2*Math.PI*p/100));
-      ctx.strokeStyle='#00d9ff';ctx.lineWidth=lineWidth;ctx.stroke();
+      ctx.arc(65,65,radius,-Math.PI/2,(-Math.PI/2)+(2*Math.PI*p/100));
+      ctx.strokeStyle=grad;ctx.lineWidth=lineWidth;ctx.stroke();
       skill.querySelector('.skill-percent').innerText=Math.floor(p)+'%';
     }
 
