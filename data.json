@@ -1,0 +1,43 @@
+{
+  "name": "Pruthviraj Phadatare",
+  "title": "AWS Cloud & DevOps Engineer",
+  "summary": "AWS Cloud & DevOps Engineer with 1.5 years of hands-on experience in AWS, automation, and CI/CD. Skilled in Terraform, Jenkins, Kubernetes and GitOps, with proven ability to accelerate deployments and enhance system reliability.",
+  "contact": {
+    "phone": "+91 9130881283",
+    "email": "pruthvirajphadatare@outlook.com",
+    "location": "Pune, Maharashtra",
+    "github": "https://github.com/pruthvirajphadatare",
+    "linkedin": "https://www.linkedin.com/in/pruthvirajphadatare"
+  },
+  "skills": {
+    "Cloud": ["EC2", "ECS", "EKS", "Lambda", "S3", "RDS", "VPC"],
+    "CI/CD": ["Jenkins", "ArgoCD", "GitHub Actions", "AWS CodePipeline", "Maven"],
+    "Containers": ["Docker", "Kubernetes (EKS, Kind, Minikube)"],
+    "Monitoring": ["CloudWatch", "CloudTrail", "Prometheus", "Grafana"]
+  },
+  "projects": [
+    {
+      "title": "Automated Infrastructure Provisioning and CI/CD Pipeline on AWS",
+      "tools": ["Terraform", "Jenkins", "Docker", "Maven", "AWS"],
+      "description": "Designed Terraform modules to automate AWS provisioning, built Jenkins pipelines with Docker & Maven, cutting release cycles by 30%."
+    },
+    {
+      "title": "Cloud-Native Microservices Deployment with Kubernetes and GitOps",
+      "tools": ["Kubernetes", "AWS EKS", "ArgoCD", "GitHub Actions", "Helm", "Docker"],
+      "description": "Delivered scalable microservices on AWS EKS using GitOps workflows with ArgoCD and GitHub Actions, reducing release cycles by 50%."
+    }
+  ],
+  "experience": [
+    {
+      "role": "Intern DevOps Engineer",
+      "company": "HisanLabs Pvt. Ltd.",
+      "location": "Wakad, Pimpri-Chinchwad",
+      "duration": "Oct 2023 – March 2024",
+      "description": [
+        "Automated AWS environments using CloudFormation and shell scripts.",
+        "Built and maintained CI/CD pipelines with CodePipeline, Jenkins, and ArgoCD.",
+        "Deployed Dockerized applications on EKS using Helm and GitOps practices."
+      ]
+    }
+  ]
+}
