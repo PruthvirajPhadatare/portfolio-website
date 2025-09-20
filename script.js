@@ -1,4 +1,4 @@
-// Typed.js for line-by-line intro
+// Typed.js intro line by line
 var typedLine1 = new Typed('#typed-line1', {
   strings: ["Hi, I'm Pruthviraj Phadatare"],
   typeSpeed: 60,
@@ -10,8 +10,9 @@ var typedLine1 = new Typed('#typed-line1', {
 var typedLine2 = new Typed('#typed-line2', {
   strings: ["AWS Cloud & DevOps Engineer"],
   typeSpeed: 60,
-  startDelay: 2500,
+  startDelay: 3000,
   backSpeed: 20,
+  backDelay: 3000,
   loop: true,
   showCursor: true
 });

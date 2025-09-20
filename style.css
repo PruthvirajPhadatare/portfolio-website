@@ -19,22 +19,28 @@ nav a:hover { color: #00d9ff; }
 /* Hero Section */
 .hero {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
   padding: 60px 20px;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
   gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .profile-container {
   display: flex;
-  align-items: center; /* vertical center */
-  justify-content: center; /* horizontal center */
-  height: 220px;
-  width: 220px;
+  align-items: center; 
+  justify-content: center; 
+  height: 240px;
+  width: 240px;
   flex-shrink: 0;
 }
 .profile-pic {
-  width: 220px;
-  height: 220px;
+  width: 240px;
+  height: 240px;
   object-fit: cover;
   border-radius: 15px;
   border: 3px solid #fff;
@@ -42,7 +48,7 @@ nav a:hover { color: #00d9ff; }
 .intro h2 {
   font-size: 2rem;
   color: #00d9ff;
-  min-height: 3em; /* prevent flicker */
+  min-height: 3em; 
   margin-bottom: 5px;
 }
 .btn {
