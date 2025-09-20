@@ -1,6 +1,5 @@
-// Typed.js intro line by line
 var typedLine1 = new Typed('#typed-line1', {
-  strings: ["Hi, I'm Pruthviraj Phadatare"],
+  strings: ["Hi, I'm Your Name"],
   typeSpeed: 60,
   backSpeed: 20,
   backDelay: 2000,
@@ -8,7 +7,7 @@ var typedLine1 = new Typed('#typed-line1', {
   showCursor: true
 });
 var typedLine2 = new Typed('#typed-line2', {
-  strings: ["AWS Cloud & DevOps Engineer"],
+  strings: ["DevOps Engineer"],
   typeSpeed: 60,
   startDelay: 3000,
   backSpeed: 20,
@@ -17,20 +16,9 @@ var typedLine2 = new Typed('#typed-line2', {
   showCursor: true
 });
 
-// Load dynamic content
 fetch('data.json')
   .then(res => res.json())
   .then(data => {
-    // Skills
-    const skillsContainer = document.getElementById('skills-container');
-    for (let category in data.skills) {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `<h3>${category}</h3><p>${data.skills[category].join(', ')}</p>`;
-      skillsContainer.appendChild(card);
-    }
-
-    // Projects
     const projectsContainer = document.getElementById('projects-container');
     data.projects.forEach(proj => {
       const card = document.createElement('div');
@@ -39,7 +27,6 @@ fetch('data.json')
       projectsContainer.appendChild(card);
     });
 
-    // Experience
     const expContainer = document.getElementById('experience-container');
     data.experience.forEach(exp => {
       const card = document.createElement('div');
@@ -48,7 +35,6 @@ fetch('data.json')
       expContainer.appendChild(card);
     });
 
-    // Scroll animation
     function revealOnScroll() {
       const cards = document.querySelectorAll('.card');
       const triggerBottom = window.innerHeight * 0.85;
