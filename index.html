@@ -1,84 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pruthviraj Phadatare | AWS Cloud & DevOps Engineer</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruthviraj Phadatare - AWS Cloud & DevOps Engineer</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Pruthviraj Phadatare</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<header>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <!-- HERO SECTION -->
+    <section id="hero" data-aos="fade-up">
+        <div class="hero-content">
+            <img src="assets/profile.jpg" alt="Pruthviraj Phadatare">
+            <h1>Pruthviraj Phadatare</h1>
+            <p>AWS Cloud & DevOps Engineer</p>
+            <div class="hero-links">
+                <a href="https://github.com/YourGitHub" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/YourLinkedIn" target="_blank">LinkedIn</a>
+                <a href="assets/Pruthviraj_Phadatare_Resume.pdf" download class="btn">Download Resume</a>
+            </div>
+        </div>
+    </section>
 
-<!-- Hero Section -->
-<section class="hero" id="about">
-  <div class="hero-gradient"></div>
-  <div class="hero-container">
-    <div class="profile-container">
-      <img src="assets/profile.jpg" alt="Profile" class="profile-pic">
-    </div>
-    <div class="hero-text">
-      <h1>Hi, I'm Pruthviraj Phadatare</h1>
-      <h2>AWS Cloud & DevOps Engineer</h2>
-      <a href="resume.pdf" download class="btn">Download Resume</a>
-    </div>
-  </div>
-</section>
+    <!-- ABOUT SECTION -->
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>AWS Cloud & DevOps Engineer with 1.5 years of hands-on experience in AWS, automation, and CI/CD. Skilled in Terraform, Jenkins, Kubernetes, and GitOps, with proven ability to accelerate deployments and enhance system reliability.</p>
+        <ul>
+            <li>Phone: +91 9130881283</li>
+            <li>Email: pruthvirajphadatare@outlook.com</li>
+            <li>Location: Pune, Maharashtra</li>
+        </ul>
+    </section>
 
-<!-- Skills Section -->
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills-container">
-    <div class="skill-circle" data-skill="AWS" data-percent="90"><i class="fab fa-aws"></i><span class="skill-label">AWS</span><span class="skill-percent">0%</span></div>
-    <div class="skill-circle" data-skill="Terraform" data-percent="85"><i class="fas fa-server"></i><span class="skill-label">Terraform</span><span class="skill-percent">0%</span></div>
-    <div class="skill-circle" data-skill="Jenkins" data-percent="80"><i class="fas fa-cogs"></i><span class="skill-label">Jenkins</span><span class="skill-percent">0%</span></div>
-    <div class="skill-circle" data-skill="Docker" data-percent="85"><i class="fab fa-docker"></i><span class="skill-label">Docker</span><span class="skill-percent">0%</span></div>
-    <div class="skill-circle" data-skill="Kubernetes" data-percent="80"><i class="fas fa-network-wired"></i><span class="skill-label">K8s</span><span class="skill-percent">0%</span></div>
-    <div class="skill-circle" data-skill="Python" data-percent="85"><i class="fab fa-python"></i><span class="skill-label">Python</span><span class="skill-percent">0%</span></div>
-    <div class="skill-circle" data-skill="Bash" data-percent="90"><i class="fas fa-terminal"></i><span class="skill-label">Bash</span><span class="skill-percent">0%</span></div>
-  </div>
-</section>
+    <!-- SKILLS SECTION -->
+    <section id="skills" data-aos="fade-right">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-container">
+            <h3>Cloud Services</h3>
+            <p>EC2, ECS, EKS, Lambda, S3, EBS, EFS, RDS, DynamoDB, VPC, IAM, Secrets Manager, Certificate Manager, CloudFront, Route 53</p>
 
-<!-- Projects Section -->
-<section id="projects">
-  <h2>Projects</h2>
-  <div id="projects-container"></div>
-</section>
+            <h3>CI/CD & Automation</h3>
+            <p>Jenkins, ArgoCD, GitHub Actions, AWS CodePipeline, Maven, Terraform, CloudFormation, Bash, Python, Ansible</p>
 
-<!-- Experience Section (Centered) -->
-<section id="experience">
-  <h2>Experience</h2>
-  <div id="experience-container" class="experience-centered"></div>
-</section>
+            <h3>Containers & Orchestration</h3>
+            <p>Docker, Kubernetes (EKS, Kind, Minikube)</p>
 
-<!-- Contact Section -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:pruthvirajphadatare@outlook.com">pruthvirajphadatare@outlook.com</a></p>
-  <p>Phone: +91 9130881283</p>
-  <p>Location: Pune, Maharashtra</p>
-  <div class="social-links">
-    <a href="https://github.com/pruthvirajphadatare" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/pruthvirajphadatare" target="_blank"><i class="fab fa-linkedin"></i></a>
-  </div>
-</section>
+            <h3>Monitoring</h3>
+            <p>CloudWatch, CloudTrail, SNS, Prometheus, Grafana</p>
 
-<footer>
-  <p>© 2025 Pruthviraj Phadatare. All rights reserved.</p>
-</footer>
+            <h3>Databases</h3>
+            <p>SQL, MySQL, PostgreSQL, MongoDB</p>
+        </div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" data-aos="fade-left">
+        <h2>Professional Experience</h2>
+        <div class="experience-item">
+            <h3>Intern DevOps Engineer | HisanLabs Pvt. Ltd.</h3>
+            <span>Oct 2023 – Mar 2024 | Wakad, Pimpri-Chinchwad</span>
+            <ul>
+                <li>Automated AWS environments using CloudFormation and shell scripts.</li>
+                <li>Built and maintained CI/CD pipelines with CodePipeline, Jenkins, and ArgoCD.</li>
+                <li>Deployed Dockerized applications on EKS using Helm and GitOps practices.</li>
+                <li>Strengthened cloud security with IAM, Secrets Manager, and Certificate Manager.</li>
+                <li>Automated workflows with Python and Bash, reducing manual effort.</li>
+                <li>Monitored infrastructure via CloudWatch, alerts with SNS, and tracked changes with CloudTrail.</li>
+                <li>Conducted AWS cost analysis and executed optimization strategies.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Automated Infrastructure Provisioning and CI/CD Pipeline on AWS</h3>
+            <p>Tools: Terraform, Jenkins, Docker, Maven, AWS (EC2, RDS, IAM, S3, VPC), CloudWatch, Git</p>
+            <ul>
+                <li>Designed Terraform modules to automate AWS provisioning, reducing setup time by 40%.</li>
+                <li>Built Jenkins pipeline with Docker & Maven to automate builds, cutting release cycles by 30%.</li>
+                <li>Configured CloudWatch monitoring and alerts for improved reliability.</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <h3>Cloud-Native Microservices Deployment with Kubernetes and GitOps</h3>
+            <p>Tools: Kubernetes, AWS EKS, ArgoCD, GitHub Actions, Jenkins, Docker, ECR, Helm</p>
+            <ul>
+                <li>Delivered scalable microservices on AWS EKS using Docker & Helm charts.</li>
+                <li>Implemented GitOps workflows with ArgoCD and GitHub Actions, shortening release cycles by 50%.</li>
+                <li>Automated end-to-end workflows for consistent deployments.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" data-aos="fade-up">
+        <h2>Education</h2>
+        <ul>
+            <li>M.Sc. in Computer Science | Pune University | 2021-23 | 77.45%</li>
+            <li>B.Sc. in Computer Science | Pune University | 2018-21 | 78.78%</li>
+        </ul>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via the form below.</p>
+        <form action="https://formsubmit.co/pruthvirajphadatare@outlook.com" method="POST" target="_blank">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer data-aos="fade-up">
+        <p>&copy; 2025 Pruthviraj Phadatare</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
 </body>
 </html>
