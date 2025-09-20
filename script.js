@@ -1,7 +1,3 @@
-// Typed Animation
-var typed1 = new Typed('#typed-line1', { strings:["Hi, I'm Pruthviraj Phadatare"], typeSpeed:60, backSpeed:20, loop:false, showCursor:true });
-var typed2 = new Typed('#typed-line2', { strings:["AWS Cloud & DevOps Engineer"], typeSpeed:60, startDelay:3000, backSpeed:20, loop:true, showCursor:true });
-
 // Load Projects & Experience
 fetch('data.json')
 .then(res=>res.json())
@@ -33,40 +29,31 @@ fetch('data.json')
   window.addEventListener('load',revealOnScroll);
 });
 
-// Circular skill animation
+// Skills animation
 function animateSkills(){
-  const skills = document.querySelectorAll('.skill-circle');
+  const skills=document.querySelectorAll('.skill-circle');
   skills.forEach(skill=>{
-    const percent = skill.getAttribute('data-percent');
-    const canvas = document.createElement('canvas');
-    canvas.width = 120; canvas.height = 120;
+    const percent=skill.getAttribute('data-percent');
+    const canvas=document.createElement('canvas');
+    canvas.width=120;canvas.height=120;
     skill.appendChild(canvas);
-    const ctx = canvas.getContext('2d');
-    const radius = 50, lineWidth = 6;
-    let current = 0;
+    const ctx=canvas.getContext('2d');
+    const radius=50,lineWidth=6;
+    let current=0;
 
     function drawCircle(p){
       ctx.clearRect(0,0,120,120);
       ctx.beginPath();
       ctx.arc(60,60,radius,0,2*Math.PI);
-      ctx.strokeStyle = 'rgba(0,217,255,0.2)';
-      ctx.lineWidth = lineWidth;
-      ctx.stroke();
+      ctx.strokeStyle='rgba(0,217,255,0.2)';
+      ctx.lineWidth=lineWidth;ctx.stroke();
       ctx.beginPath();
       ctx.arc(60,60,radius,-Math.PI/2,(-Math.PI/2)+(2*Math.PI*p/100));
-      ctx.strokeStyle = '#00d9ff';
-      ctx.lineWidth = lineWidth;
-      ctx.stroke();
-      skill.querySelector('.skill-percent').innerText = Math.floor(p) + '%';
+      ctx.strokeStyle='#00d9ff';ctx.lineWidth=lineWidth;ctx.stroke();
+      skill.querySelector('.skill-percent').innerText=Math.floor(p)+'%';
     }
 
-    function animate(){
-      if(current<percent){
-        current +=1;
-        drawCircle(current);
-        requestAnimationFrame(animate);
-      } else drawCircle(percent);
-    }
+    function animate(){if(current<percent){current+=1;drawCircle(current);requestAnimationFrame(animate);}else drawCircle(percent);}
     animate();
   });
 }
