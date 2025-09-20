@@ -1,35 +1,13 @@
 {
   "projects": [
-    {
-      "name": "Automated Infrastructure Provisioning",
-      "description": "Provisioned VPC, subnets, security groups, and RDS using Terraform, reducing setup time by 40%."
-    },
-    {
-      "name": "Cloud-Native Microservices Deployment",
-      "description": "Deployed scalable microservices on AWS EKS using Helm and GitOps workflows."
-    },
-    {
-      "name": "CI/CD Pipeline Optimization",
-      "description": "Reduced deployment time by 30% with Jenkins pipeline improvements."
-    },
-    {
-      "name": "Serverless Lambda Automation",
-      "description": "Automated AWS Lambda workflows using event triggers and monitoring for faster processing."
-    },
-    {
-      "name": "AWS Cost Optimization",
-      "description": "Implemented cost-saving strategies, reducing cloud spend by 25%."
-    },
-    {
-      "name": "Infrastructure Monitoring Dashboard",
-      "description": "Built real-time monitoring dashboards using CloudWatch, Prometheus, and Grafana."
-    }
+    {"name":"Automated Infrastructure Provisioning","description":"Provisioned VPC, subnets, security groups, and RDS using Terraform, reducing setup time by 40%."},
+    {"name":"Cloud-Native Microservices Deployment","description":"Deployed scalable microservices on AWS EKS using Helm and GitOps workflows."},
+    {"name":"CI/CD Pipeline Optimization","description":"Reduced deployment time by 30% with Jenkins pipeline improvements."},
+    {"name":"Serverless Lambda Automation","description":"Automated AWS Lambda workflows using event triggers and monitoring for faster processing."},
+    {"name":"AWS Cost Optimization","description":"Implemented cost-saving strategies, reducing cloud spend by 25%."},
+    {"name":"Infrastructure Monitoring Dashboard","description":"Built real-time monitoring dashboards using CloudWatch, Prometheus, and Grafana."}
   ],
-  "experience": [
-    {
-      "role": "Intern DevOps Engineer",
-      "company": "HisanLabs Pvt. Ltd.",
-      "duration": "Oct 2023 – Mar 2024"
-    }
+  "experience":[
+    {"role":"Intern DevOps Engineer","company":"HisanLabs Pvt. Ltd.","duration":"Oct 2023 – Mar 2024"}
   ]
 }
