@@ -1,8 +1,9 @@
 // Typed.js for dynamic intro
 var typed = new Typed('#typed', {
   strings: ["Hi, I'm Pruthviraj Phadatare – AWS Cloud & DevOps Engineer"],
-  typeSpeed: 50,
+  typeSpeed: 40,
   backSpeed: 20,
+  backDelay: 2500,
   loop: true
 });
 
@@ -36,4 +37,22 @@ fetch('data.json')
       card.innerHTML = `<h3>${exp.role}</h3><p>${exp.company}</p><p>${exp.duration}</p>`;
       expContainer.appendChild(card);
     });
+
+    // Scroll animation
+    function revealOnScroll() {
+      const cards = document.querySelectorAll('.card');
+      const triggerBottom = window.innerHeight * 0.85;
+
+      cards.forEach((card, index) => {
+        const cardTop = card.getBoundingClientRect().top;
+        if(cardTop < triggerBottom) {
+          setTimeout(() => {
+            card.classList.add('visible');
+          }, index * 150);
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
   });

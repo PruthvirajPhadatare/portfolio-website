@@ -1,89 +1,25 @@
 {
   "skills": {
-    "Cloud Services": [
-      "EC2",
-      "ECS",
-      "EKS",
-      "Lambda",
-      "S3",
-      "EBS",
-      "EFS",
-      "RDS",
-      "DynamoDB",
-      "VPC",
-      "IAM",
-      "Secrets Manager",
-      "Certificate Manager",
-      "CloudFront",
-      "Route 53"
-    ],
-    "CI/CD Tools": [
-      "Jenkins",
-      "ArgoCD",
-      "GitHub Actions",
-      "AWS CodePipeline",
-      "Maven"
-    ],
-    "Infrastructure as Code": [
-      "Terraform",
-      "CloudFormation"
-    ],
-    "Containers & Orchestration": [
-      "Docker",
-      "Kubernetes (EKS, Kind, Minikube)"
-    ],
-    "Monitoring & Observability": [
-      "CloudWatch",
-      "CloudTrail",
-      "SNS",
-      "Prometheus",
-      "Grafana"
-    ],
-    "Databases": [
-      "SQL",
-      "MySQL",
-      "PostgreSQL",
-      "MongoDB"
-    ],
-    "Scripting & Automation": [
-      "Bash",
-      "Python"
-    ],
-    "Config Management": [
-      "Ansible (basic)"
-    ],
-    "Operating Systems": [
-      "Linux (Ubuntu, Red Hat, CentOS)"
-    ]
+    "Cloud Services": ["EC2","ECS","EKS","Lambda","S3","EBS","EFS","RDS","DynamoDB","VPC","IAM","Secrets Manager","Certificate Manager","CloudFront","Route 53"],
+    "CI/CD Tools": ["Jenkins","ArgoCD","GitHub Actions","AWS CodePipeline","Maven"],
+    "Infrastructure as Code": ["Terraform","CloudFormation"],
+    "Containers & Orchestration": ["Docker","Kubernetes (EKS, Kind, Minikube)"],
+    "Monitoring & Observability": ["CloudWatch","CloudTrail","SNS","Prometheus","Grafana"],
+    "Databases": ["SQL","MySQL","PostgreSQL","MongoDB"],
+    "Scripting & Automation": ["Bash","Python"],
+    "Config Management": ["Ansible (basic)"],
+    "Operating Systems": ["Linux (Ubuntu, Red Hat, CentOS)"]
   },
   "projects": [
-    {
-      "name": "Automated Infrastructure with Terraform",
-      "description": "Provisioned VPC, subnets, security groups, and RDS with Terraform, reducing setup time by 40%."
-    },
-    {
-      "name": "Kubernetes Cluster Deployment",
-      "description": "Deployed scalable workloads on EKS using Helm charts and GitOps workflows."
-    },
-    {
-      "name": "CI/CD Pipeline Optimization",
-      "description": "Reduced deployment time by 30% by optimizing Jenkins pipelines and automating releases."
-    },
-    {
-      "name": "Application Deployment with Ansible",
-      "description": "Automated application setup and configuration with Ansible playbooks."
-    }
+    {"name": "Automated Infrastructure Provisioning", "description": "Provisioned VPC, subnets, security groups, and RDS using Terraform, reducing setup time by 40%."},
+    {"name": "Cloud-Native Microservices Deployment", "description": "Deployed scalable microservices on AWS EKS using Helm and GitOps workflows."},
+    {"name": "CI/CD Pipeline Optimization", "description": "Reduced deployment time by 30% with Jenkins pipeline improvements."},
+    {"name": "Application Deployment Automation with Ansible", "description": "Automated app setup and configuration, increasing deployment reliability."},
+    {"name": "AWS Cost Optimization", "description": "Implemented cost-saving strategies, reducing cloud spend by 25%."},
+    {"name": "Infrastructure Monitoring Dashboard", "description": "Built real-time monitoring dashboards using CloudWatch, Prometheus, and Grafana."}
   ],
   "experience": [
-    {
-      "role": "Intern DevOps Engineer",
-      "company": "HisanLabs Pvt. Ltd.",
-      "duration": "Oct 2023 – Mar 2024"
-    },
-    {
-      "role": "AWS Cloud Engineer",
-      "company": "Current Employer (WFH)",
-      "duration": "2024 – Present"
-    }
+    {"role": "Intern DevOps Engineer", "company": "HisanLabs Pvt. Ltd.", "duration": "Oct 2023 – Mar 2024"},
+    {"role": "AWS Cloud Engineer", "company": "Current Employer (WFH)", "duration": "2024 – Present"}
   ]
 }
