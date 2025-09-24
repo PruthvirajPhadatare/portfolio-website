@@ -3,37 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pruthviraj Phadatare - Portfolio</title>
+  <title>Pruthviraj Phadatare - AWS Cloud & DevOps Engineer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Library for scroll animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="header-content">
-      <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+  <!-- HERO SECTION -->
+  <section id="hero" data-aos="fade-up">
+    <div class="hero-content">
+      <div class="profile-container">
+        <img src="assets/profile.jpg" alt="Pruthviraj Phadatare" class="profile-img">
+      </div>
       <h1>Pruthviraj Phadatare</h1>
       <p>AWS Cloud & DevOps Engineer</p>
-      <div class="social-links">
-        <a href="https://github.com/pruthvirajphadatare" target="_blank">
-          <img src="github.png" alt="GitHub">
+      <div class="hero-links">
+        <a href="https://github.com/PruthvirajPhadatare" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="social-logo"> GitHub
         </a>
-        <a href="https://www.linkedin.com/in/pruthviraj-phadatare/" target="_blank">
-          <img src="linkedin.png" alt="LinkedIn">
+        <a href="https://www.linkedin.com/in/pruthvirajphadatare" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="social-logo"> LinkedIn
         </a>
-        <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+        <a href="assets/Pruthviraj_Phadatare_Resume.pdf" download class="btn">Download Resume</a>
       </div>
     </div>
-  </header>
+  </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT SECTION -->
   <section id="about" data-aos="zoom-in">
     <div class="box-section">
       <h2>About Me</h2>
       <p>
-        AWS Cloud & DevOps Engineer with 2 years of hands-on experience in AWS, automation, and CI/CD.
-        Skilled in Terraform, Jenkins, Kubernetes, and GitOps, with proven ability to accelerate deployments
+        AWS Cloud & DevOps Engineer with 1.5 years of hands-on experience in AWS, automation, and CI/CD. 
+        Skilled in Terraform, Jenkins, Kubernetes, and GitOps, with proven ability to accelerate deployments 
         and enhance system reliability.
       </p>
       <ul>
@@ -44,95 +53,101 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills" data-aos="fade-up">
-    <div class="box-section">
-      <h2>Skills</h2>
-      <div class="skills-container">
-        <ul>
-          <li><strong>Cloud Services:</strong> AWS (EC2, S3, RDS, VPC, IAM, CloudFront)</li>
-          <li><strong>CI/CD & Automation:</strong> Jenkins, GitHub Actions, Ansible</li>
-          <li><strong>Containerization:</strong> Docker, Kubernetes, Helm</li>
-          <li><strong>Infrastructure as Code:</strong> Terraform, CloudFormation</li>
-          <li><strong>Monitoring & Logging:</strong> CloudWatch, Prometheus, Grafana</li>
-          <li><strong>Version Control:</strong> Git, GitHub, GitLab</li>
-          <li><strong>OS & Scripting:</strong> Linux (Ubuntu, CentOS, RHEL), Bash</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" data-aos="fade-up">
-    <div class="box-section">
-      <h2>Professional Experience</h2>
-      <div class="experience-item">
-        <h3>AWS Cloud Engineer</h3>
-        <p><em>Current Role</em></p>
-        <ul>
-          <li>Designed and deployed scalable infrastructure on AWS using Terraform.</li>
-          <li>Optimized Jenkins CI/CD pipelines, reducing deployment time by 30%.</li>
-          <li>Implemented monitoring solutions using CloudWatch and Grafana.</li>
-          <li>Collaborated with development teams to containerize apps using Docker & Kubernetes.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education" data-aos="fade-up">
-    <div class="box-section">
-      <h2>Education</h2>
+  <!-- SKILLS SECTION -->
+  <section id="skills" data-aos="zoom-in">
+    <div class="box-section skills-box">
+      <h2>Skills & Technologies</h2>
       <ul>
-        <li><strong>M.Sc. in Computer Science</strong> – Pune University</li>
-        <li><strong>B.Sc. in Computer Science</strong> – Pune University</li>
+        <li><strong>Cloud Services:</strong> EC2, ECS, EKS, Lambda, S3, EBS, EFS, RDS, DynamoDB, VPC, IAM, Secrets Manager, Certificate Manager, CloudFront, Route 53</li>
+        <li><strong>CI/CD & Automation:</strong> Jenkins, ArgoCD, GitHub Actions, AWS CodePipeline, Maven, Bash, Python, Ansible</li>
+        <li><strong>Infrastructure as Code:</strong> Terraform, CloudFormation</li>
+        <li><strong>Containers & Orchestration:</strong> Docker, Kubernetes (EKS, Kind, Minikube)</li>
+        <li><strong>Monitoring & Observability:</strong> CloudWatch, CloudTrail, SNS, Prometheus, Grafana</li>
+        <li><strong>Databases:</strong> SQL, MySQL, PostgreSQL, MongoDB</li>
+        <li><strong>Operating Systems:</strong> Linux (Ubuntu, Red Hat, CentOS)</li>
       </ul>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" data-aos="fade-up">
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" data-aos="zoom-in">
     <div class="box-section">
-      <h2>Projects</h2>
-      <div class="project-item">
-        <h3>Automated Infrastructure Provisioning with Terraform</h3>
-        <p><strong>Tools:</strong> Terraform, AWS</p>
-        <p>Provisioned a full VPC setup with public/private subnets, NAT, and RDS using Terraform modules.</p>
-      </div>
-      <div class="project-item">
-        <h3>Kubernetes Cluster Deployment</h3>
-        <p><strong>Tools:</strong> Kubernetes, Docker, Helm</p>
-        <p>Deployed microservices app with Ingress, HPA, and monitoring stack.</p>
-      </div>
-      <div class="project-item">
-        <h3>CI/CD Pipeline Optimization</h3>
-        <p><strong>Tools:</strong> Jenkins, GitHub, Ansible</p>
-        <p>Built declarative Jenkins pipelines integrated with GitHub webhooks & automated Ansible deployments.</p>
+      <h2>Professional Experience</h2>
+      <div class="experience-item">
+        <h3>Intern DevOps Engineer | HisanLabs Pvt. Ltd.</h3>
+        <span>Oct 2023 – Mar 2024 | Wakad, Pimpri-Chinchwad</span>
+        <ul>
+          <li>Automated AWS environments using CloudFormation and shell scripts.</li>
+          <li>Built and maintained CI/CD pipelines with CodePipeline, Jenkins, and ArgoCD.</li>
+          <li>Deployed Dockerized applications on EKS using Helm and GitOps practices.</li>
+          <li>Strengthened cloud security with IAM, Secrets Manager, and Certificate Manager.</li>
+          <li>Automated workflows with Python and Bash, reducing manual effort.</li>
+          <li>Monitored infrastructure via CloudWatch, alerts with SNS, and tracked changes with CloudTrail.</li>
+          <li>Conducted AWS cost analysis and executed optimization strategies.</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- PROJECTS SECTION -->
+  <section id="projects" data-aos="zoom-in">
+    <div class="box-section">
+      <h2>Projects</h2>
+      <div class="project-item">
+        <h3>Automated Infrastructure Provisioning and CI/CD Pipeline on AWS</h3>
+        <p><strong>Tools:</strong> Terraform, Jenkins, Docker, Maven, AWS (EC2, RDS, IAM, S3, VPC), CloudWatch, Git</p>
+        <ul>
+          <li>Designed Terraform modules to automate AWS provisioning, reducing setup time by 40%.</li>
+          <li>Built Jenkins pipeline with Docker & Maven to automate builds, cutting release cycles by 30%.</li>
+          <li>Configured CloudWatch monitoring and alerts for improved reliability.</li>
+        </ul>
+      </div>
+      <div class="project-item">
+        <h3>Cloud-Native Microservices Deployment with Kubernetes and GitOps</h3>
+        <p><strong>Tools:</strong> Kubernetes, AWS EKS, ArgoCD, GitHub Actions, Jenkins, Docker, ECR, Helm</p>
+        <ul>
+          <li>Delivered scalable microservices on AWS EKS using Docker & Helm charts.</li>
+          <li>Implemented GitOps workflows with ArgoCD and GitHub Actions, shortening release cycles by 50%.</li>
+          <li>Automated end-to-end workflows for consistent deployments.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education" data-aos="zoom-in">
+    <div class="box-section">
+      <h2>Education</h2>
+      <ul>
+        <li>M.Sc. in Computer Science | Pune University | 2021-23 | 77.45%</li>
+        <li>B.Sc. in Computer Science | Pune University | 2018-21 | 78.78%</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
   <section id="contact" data-aos="zoom-in">
     <div class="box-section">
       <h2>Contact Me</h2>
-      <form action="https://pruthvirajphadatare.github.io/portfolio-website/" method="get" target="_blank">
+      <form action="https://formsubmit.co/pruthvirajphadatare@outlook.com" method="POST">
+        <input type="hidden" name="_next" value="https://pruthvirajphadatare.github.io/portfolio-website/">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit" class="btn">Send Message</button>
       </form>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 Pruthviraj Phadatare. All Rights Reserved.</p>
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 Pruthviraj Phadatare</p>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({ duration: 1000, once: true });
   </script>
 </body>
 </html>
