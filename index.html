@@ -5,174 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pruthviraj Phadatare | DevOps & Cloud Engineer</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <link rel="icon" href="assets/profile.jpg" />
 </head>
-
 <body>
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="container nav-container">
-      <div></div> <!-- Empty logo placeholder -->
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a class="btn resume-btn" href="assets/resume.pdf" target="_blank">Resume</a></li>
-          <li><button id="theme-toggle" title="Toggle light/dark mode">🌓</button></li>
-        </ul>
-        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-      </nav>
-    </div>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <h2>Hi, I'm <span class="accent">Pruthviraj Phadatare</span></h2>
-      <h3>DevOps & Cloud Engineer | AWS & OCI Certified</h3>
-      <p>
-        Passionate about automating cloud infrastructure, CI/CD pipelines, and optimizing 
-        multi-cloud environments for performance and reliability.
-      </p>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <img src="assets/profile.jpg" alt="Profile Photo" class="profile-img" />
+      <h1>Hi, I’m <span class="highlight">Pruthviraj Phadatare 👋</span></h1>
+      <p class="tagline">A DevOps & Cloud Engineer | AWS & OCI Certified</p>
+      <a href="assets/resume.pdf" class="btn resume-btn" target="_blank">Download Resume</a>
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- About -->
   <section id="about" class="section">
-    <div class="container about-grid">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          I'm a DevOps and Cloud Engineer with over 2 years of experience in designing,
-          automating, and maintaining scalable infrastructure. Skilled in AWS, OCI, Docker,
-          Kubernetes, Terraform, Jenkins, and Ansible. I’m focused on building reliable CI/CD
-          pipelines and improving cloud efficiency.
-        </p>
-        <ul>
-          <li>⚙️ Reduced deployment time by 30% by optimizing Jenkins pipelines.</li>
-          <li>☁️ Experienced in AWS and OCI for multi-cloud automation.</li>
-          <li>💡 Passionate about IaC, containerization, and cloud security.</li>
-        </ul>
-      </div>
-      <div class="about-img">
-        <img src="assets/profile.jpg" alt="Profile Photo">
-      </div>
-    </div>
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate DevOps and Cloud Engineer with 2 years of hands-on experience in AWS and OCI environments.
+      Skilled in automation, CI/CD, containerization, and cloud architecture. I love creating scalable,
+      reliable, and secure infrastructure solutions that empower development teams to move faster.
+    </p>
   </section>
 
-  <!-- SKILLS -->
+  <!-- Skills -->
   <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills & Tools</h2>
-      <div class="skill-grid">
-        <div>
-          <h3>Cloud Platforms</h3>
-          <p><b>AWS:</b> EC2, S3, RDS, CloudFront, IAM, VPC, CloudWatch</p>
-          <p><b>OCI:</b> Compute, VCN, Object Storage, Autonomous DB, OKE, Resource Manager, IAM, Monitoring, Logging, OCIR, Vault, API Gateway</p>
-        </div>
-        <div>
-          <h3>DevOps Tools</h3>
-          <p>Jenkins, Docker, Kubernetes, Terraform, Ansible, Git, GitHub Actions, Prometheus, Grafana</p>
-        </div>
-        <div>
-          <h3>Programming & OS</h3>
-          <p>Bash, Python (basic), Linux (Ubuntu, CentOS, Red Hat)</p>
-        </div>
-      </div>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">AWS (EC2, S3, RDS, Lambda, CloudFront)</div>
+      <div class="skill-card">OCI (Compute, Block Volume, Object Storage, OKE)</div>
+      <div class="skill-card">Docker & Kubernetes</div>
+      <div class="skill-card">Terraform & CloudFormation</div>
+      <div class="skill-card">Jenkins, Ansible, Git, GitHub Actions</div>
+      <div class="skill-card">Linux Administration & Shell Scripting</div>
     </div>
   </section>
 
-  <!-- CERTIFICATIONS -->
-  <section id="certifications" class="section">
-    <div class="container">
-      <h2>Certifications</h2>
-      
-      <div class="cert-section">
-        <h3><span class="accent">AWS Certifications</span></h3>
-        <div class="cert-grid">
-          <div class="cert-card">
-            <img src="https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified-Cloud-Practitioner_badge_600x600.9d66b39b0c.png" alt="AWS Cloud Practitioner">
-            <p>AWS Certified Cloud Practitioner</p>
-          </div>
-          <div class="cert-card">
-            <img src="https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified-Solutions-Architect-Associate_badge_600x600.84a5e3bdf6.png" alt="AWS Solutions Architect Associate">
-            <p>AWS Certified Solutions Architect – Associate</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cert-section">
-        <h3><span class="accent">Oracle Certifications</span></h3>
-        <div class="cert-grid">
-          <div class="cert-card">
-            <img src="https://seeklogo.com/images/O/oracle-cloud-infrastructure-foundations-associate-logo-F0B8E61A83-seeklogo.com.png" alt="OCI Foundations Associate">
-            <p>OCI 2025 Certified Foundations Associate</p>
-          </div>
-          <div class="cert-card">
-            <img src="https://seeklogo.com/images/O/oracle-cloud-infrastructure-architect-associate-logo-9A98161B5D-seeklogo.com.png" alt="OCI Architect Associate">
-            <p>OCI 2025 Certified Architect Associate</p>
-          </div>
-          <div class="cert-card">
-            <img src="https://seeklogo.com/images/O/oracle-data-platform-foundations-associate-logo-11B501A8F5-seeklogo.com.png" alt="Oracle Data Platform Foundations Associate">
-            <p>Oracle Data Platform Foundations Associate</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
+  <!-- Projects -->
   <section id="projects" class="section">
-    <div class="container">
-      <h2>Featured DevOps Projects</h2>
-      <div class="project-grid">
-        <div class="project">
-          <h3>Automated Infrastructure Provisioning with Terraform</h3>
-          <p>Reusable Terraform modules for multi-cloud environments automating network, compute, and storage provisioning.</p>
-        </div>
-        <div class="project">
-          <h3>Kubernetes Cluster Deployment and Management</h3>
-          <p>Containerized microservices deployed via Helm charts, integrated with Jenkins pipelines for continuous delivery.</p>
-        </div>
-        <div class="project">
-          <h3>CI/CD Pipeline Optimization with Jenkins</h3>
-          <p>Declarative pipelines reducing manual steps and deployment time by 30%, ensuring secure secrets management.</p>
-        </div>
-        <div class="project">
-          <h3>AWS Cost Optimization and Monitoring</h3>
-          <p>Custom CloudWatch dashboards and billing alerts reducing monthly AWS costs by 15% through automation.</p>
-        </div>
-        <div class="project">
-          <h3>Application Deployment Automation with Ansible</h3>
-          <p>Automated deployment of backend and database tiers with Ansible playbooks and role-based configurations.</p>
-        </div>
-        <div class="project">
-          <h3>Automated Infrastructure Deployment Using CloudFormation</h3>
-          <p>Version-controlled infrastructure deployment templates using AWS CloudFormation for multi-environment consistency.</p>
-        </div>
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Automated Infrastructure Provisioning with Terraform</h3>
+        <p>Provisioned AWS infrastructure using Terraform with reusable modules and versioned state management.</p>
+      </div>
+      <div class="project-card">
+        <h3>Kubernetes Cluster Deployment and Management</h3>
+        <p>Deployed and managed containerized microservices on EKS with Helm and Ingress controllers.</p>
+      </div>
+      <div class="project-card">
+        <h3>CI/CD Pipeline Optimization with Jenkins</h3>
+        <p>Reduced deployment time by 30% with optimized Jenkins pipelines and secure credential management.</p>
+      </div>
+      <div class="project-card">
+        <h3>AWS Cost Optimization and Monitoring</h3>
+        <p>Implemented CloudWatch dashboards and cost alerts, reducing AWS spend by 20%.</p>
+      </div>
+      <div class="project-card">
+        <h3>Application Deployment Automation with Ansible</h3>
+        <p>Automated multi-tier app deployments on EC2 using Ansible roles and dynamic inventory.</p>
+      </div>
+      <div class="project-card">
+        <h3>Automated Infrastructure Deployment Using CloudFormation</h3>
+        <p>Built CloudFormation templates to deploy end-to-end VPC, ALB, EC2, and RDS setups with version control.</p>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- Certifications -->
+  <section id="certifications" class="section">
+    <h2>Certifications</h2>
+    <div class="cert-section">
+      <h3>AWS Certifications</h3>
+      <div class="badge-grid">
+        <img src="https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Cloud-Practitioner_badge.9d6a8e98b25e1e6b49d75b4b49d2b6f1d8b5e2f2.png" alt="AWS Cloud Practitioner" class="badge" />
+        <img src="https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Solutions-Architect-Associate_badge.3b4c4f08e4b8e1f7f8f05f86f4f8d0cecf9056ef.png" alt="AWS Solutions Architect Associate" class="badge" />
+      </div>
+
+      <h3>Oracle Certifications</h3>
+      <div class="badge-grid">
+        <img src="https://education.oracle.com/file/general/p-oci-foundations-associate.png" alt="OCI Foundations Associate" class="badge" />
+        <img src="https://education.oracle.com/file/general/p-oci-architect-associate.png" alt="OCI Architect Associate" class="badge" />
+        <img src="https://education.oracle.com/file/general/p-odp-foundations-associate.png" alt="Oracle Data Platform Foundations Associate" class="badge" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
   <section id="contact" class="section">
-    <div class="container contact">
-      <h2>Get in Touch</h2>
-      <p>Interested in working together or discussing DevOps solutions? Let's connect!</p>
-      <ul>
-        <li>📧 <a href="mailto:pruthvirajphadatare@outlook.com">pruthvirajphadatare@outlook.com</a></li>
-        <li>📱 <a href="tel:+919175976336">+91 9175976336</a></li>
-        <li>💻 <a href="https://github.com/PruthvirajPhadatare" target="_blank">GitHub</a></li>
-        <li>🔗 <a href="https://www.linkedin.com/in/pruthvirajphadatare" target="_blank">LinkedIn</a></li>
-      </ul>
+    <h2>Contact</h2>
+    <p>Let’s connect and collaborate on exciting projects!</p>
+    <div class="contact-links">
+      <a href="mailto:pruthvirajphadatare@outlook.com">📧 Email</a>
+      <a href="https://github.com/PruthvirajPhadatare" target="_blank">💻 GitHub</a>
+      <a href="https://www.linkedin.com/in/pruthvirajphadatare" target="_blank">🔗 LinkedIn</a>
+      <a href="tel:+919175976336">📱 Call</a>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Pruthviraj Phadatare </p>
+    <p>© 2025 Pruthviraj Phadatare | All Rights Reserved</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
