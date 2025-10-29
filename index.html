@@ -9,9 +9,10 @@
 </head>
 
 <body>
+  <!-- NAVBAR -->
   <header class="navbar">
     <div class="container nav-container">
-      <h1 class="logo">Pruthviraj<span class="accent">.</span></h1>
+      <div></div> <!-- empty placeholder instead of logo -->
       <nav>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -19,7 +20,8 @@
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a class="btn" href="assets/resume.pdf" target="_blank">Resume</a></li>
+          <li><a class="btn resume-btn" href="assets/resume.pdf" target="_blank">Resume</a></li>
+          <li><button id="theme-toggle" title="Toggle light/dark mode">🌓</button></li>
         </ul>
         <div class="menu-toggle" id="menu-toggle">&#9776;</div>
       </nav>
@@ -31,8 +33,10 @@
     <div class="container">
       <h2>Hi, I'm <span class="accent">Pruthviraj Phadatare</span></h2>
       <h3>DevOps & Cloud Engineer | AWS & OCI Certified</h3>
-      <p>Passionate about automating cloud infrastructure, CI/CD pipelines, and optimizing cloud environments for scalability and performance.</p>
-      <a href="#projects" class="btn">View My Work</a>
+      <p>
+        Passionate about automating cloud infrastructure, CI/CD pipelines, and optimizing 
+        multi-cloud environments for performance and reliability.
+      </p>
     </div>
   </section>
 
@@ -41,14 +45,15 @@
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I'm a DevOps and AWS Cloud Engineer with 2+ years of experience in designing, automating, and maintaining cloud infrastructure.
-        I’ve worked extensively with AWS, OCI, Kubernetes, Docker, Terraform, Jenkins, and Ansible.  
-        I focus on delivering high-availability, secure, and efficient cloud deployments.
+        I'm a DevOps and Cloud Engineer with over 2 years of experience in designing,
+        automating, and maintaining scalable infrastructure. Skilled in AWS, OCI, Docker,
+        Kubernetes, Terraform, Jenkins, and Ansible. I’m focused on building reliable CI/CD
+        pipelines and improving cloud efficiency.
       </p>
       <ul>
-        <li>🎯 Reduced deployment time by 30% by optimizing Jenkins pipelines.</li>
-        <li>⚙️ Experienced in AWS, OCI, and modern DevOps automation tools.</li>
-        <li>💡 Always exploring better ways to automate infrastructure as code.</li>
+        <li>⚙️ Reduced deployment time by 30% by optimizing Jenkins pipelines.</li>
+        <li>☁️ Experienced in AWS and OCI for multi-cloud automation.</li>
+        <li>💡 Passionate about IaC, containerization, and cloud security.</li>
       </ul>
     </div>
   </section>
@@ -79,35 +84,36 @@
   <section id="certifications" class="section">
     <div class="container">
       <h2>Certifications</h2>
-      <p>Recognized cloud certifications showcasing expertise in AWS and Oracle Cloud Infrastructure.</p>
-
-      <div class="cert-grid">
-        <!-- Oracle -->
-        <a class="cert" href="#" target="_blank" rel="noopener" data-cert="Oracle Data Platform Foundations Associate">
-          <img src="https://img.shields.io/badge/Oracle-Data%20Platform%20Foundations%20Associate-orange?logo=oracle&logoColor=white" alt="Oracle Data Platform Foundations Associate">
-        </a>
-        <a class="cert" href="#" target="_blank" rel="noopener" data-cert="OCI 2025 Certified Architect Associate">
-          <img src="https://img.shields.io/badge/Oracle-OCI%202025%20Architect%20Associate-orange?logo=oracle&logoColor=white" alt="OCI Architect Associate">
-        </a>
-        <a class="cert" href="#" target="_blank" rel="noopener" data-cert="OCI 2025 Certified Foundations Associate">
-          <img src="https://img.shields.io/badge/Oracle-OCI%202025%20Foundations%20Associate-orange?logo=oracle&logoColor=white" alt="OCI Foundations Associate">
-        </a>
-
-        <!-- AWS -->
-        <a class="cert" href="#" target="_blank" rel="noopener" data-cert="AWS Certified Cloud Practitioner">
-          <img src="https://img.shields.io/badge/AWS-Cloud%20Practitioner-blue?logo=amazon-aws&logoColor=white" alt="AWS Cloud Practitioner">
-        </a>
-        <a class="cert" href="#" target="_blank" rel="noopener" data-cert="AWS Certified Solutions Architect">
-          <img src="https://img.shields.io/badge/AWS-Solutions%20Architect-blue?logo=amazon-aws&logoColor=white" alt="AWS Solutions Architect">
-        </a>
+      
+      <div class="cert-section">
+        <h3><span class="accent">AWS Certifications</span></h3>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <img src="https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified-Cloud-Practitioner_badge_600x600.9d66b39b0c.png" alt="AWS Cloud Practitioner">
+            <p>AWS Certified Cloud Practitioner</p>
+          </div>
+          <div class="cert-card">
+            <img src="https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified-Solutions-Architect-Associate_badge_600x600.84a5e3bdf6.png" alt="AWS Solutions Architect">
+            <p>AWS Certified Solutions Architect – Associate</p>
+          </div>
+        </div>
       </div>
 
-      <div id="cert-modal" class="modal hidden">
-        <div class="modal-inner">
-          <button id="modal-close">✕</button>
-          <h3 id="modal-title"></h3>
-          <p id="modal-body">Click "Open verification" to view your certification (if available).</p>
-          <a id="modal-link" href="#" target="_blank" rel="noopener" class="btn">Open verification</a>
+      <div class="cert-section">
+        <h3><span class="accent">Oracle Certifications</span></h3>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <img src="https://education.oracle.com/file/general/oci-foundations-associate.png" alt="OCI Foundations Associate">
+            <p>OCI 2025 Certified Foundations Associate</p>
+          </div>
+          <div class="cert-card">
+            <img src="https://education.oracle.com/file/general/oci-architect-associate.png" alt="OCI Architect Associate">
+            <p>OCI 2025 Certified Architect Associate</p>
+          </div>
+          <div class="cert-card">
+            <img src="https://education.oracle.com/file/general/oci-data-platform-foundations-associate.png" alt="Oracle Data Platform Foundations Associate">
+            <p>Oracle Data Platform Foundations Associate</p>
+          </div>
         </div>
       </div>
     </div>
@@ -120,27 +126,27 @@
       <div class="project-grid">
         <div class="project">
           <h3>Automated Infrastructure Provisioning with Terraform</h3>
-          <p>Created reusable Terraform modules for cloud environments on AWS and OCI, automating VPC, subnet, and EC2 provisioning.</p>
+          <p>Reusable Terraform modules for multi-cloud environments automating network, compute, and storage provisioning.</p>
         </div>
         <div class="project">
           <h3>Kubernetes Cluster Deployment and Management</h3>
-          <p>Deployed and managed containerized applications on Kubernetes with Helm and custom CI/CD integration.</p>
+          <p>Containerized microservices deployed via Helm charts, integrated with Jenkins pipelines for continuous delivery.</p>
         </div>
         <div class="project">
           <h3>CI/CD Pipeline Optimization with Jenkins</h3>
-          <p>Developed declarative Jenkins pipelines improving deployment speed by 30% and ensuring secure credential access.</p>
+          <p>Declarative pipelines reducing manual steps and deployment time by 30%, ensuring secure secrets management.</p>
         </div>
         <div class="project">
           <h3>AWS Cost Optimization and Monitoring</h3>
-          <p>Implemented AWS CloudWatch dashboards and budgeting alerts to optimize resource utilization and cost efficiency.</p>
+          <p>Custom CloudWatch dashboards and billing alerts reducing monthly AWS costs by 15% through automation.</p>
         </div>
         <div class="project">
           <h3>Application Deployment Automation with Ansible</h3>
-          <p>Automated configuration management and deployment of multi-tier applications using Ansible playbooks.</p>
+          <p>Automated deployment of backend and database tiers with Ansible playbooks and role-based configurations.</p>
         </div>
         <div class="project">
           <h3>Automated Infrastructure Deployment Using CloudFormation</h3>
-          <p>Implemented full-stack application deployment templates using AWS CloudFormation for consistent, versioned infrastructure.</p>
+          <p>Version-controlled infrastructure deployment templates using AWS CloudFormation for multi-environment consistency.</p>
         </div>
       </div>
     </div>
@@ -150,7 +156,7 @@
   <section id="contact" class="section">
     <div class="container contact">
       <h2>Get in Touch</h2>
-      <p>If you’d like to collaborate or discuss opportunities, feel free to reach out!</p>
+      <p>Interested in working together or discussing DevOps solutions? Let's connect!</p>
       <ul>
         <li>📧 <a href="mailto:pruthvirajphadatare@outlook.com">pruthvirajphadatare@outlook.com</a></li>
         <li>📱 <a href="tel:+919175976336">+91 9175976336</a></li>
@@ -161,7 +167,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Pruthviraj Phadatare | Built with ❤️ using HTML, CSS, and JS</p>
+    <p>© 2025 Pruthviraj Phadatare </p>
   </footer>
 </body>
 </html>
