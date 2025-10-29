@@ -1,153 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pruthviraj Phadatare - AWS Cloud & DevOps Engineer</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <!-- AOS Library for scroll animations -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pruthviraj Phadatare | DevOps & Cloud Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
-<body>
 
-  <!-- HERO SECTION -->
-  <section id="hero" data-aos="fade-up">
-    <div class="hero-content">
-      <div class="profile-container">
-        <img src="assets/profile.jpg" alt="Pruthviraj Phadatare" class="profile-img">
-      </div>
-      <h1>Pruthviraj Phadatare</h1>
-      <p>AWS Cloud & DevOps Engineer</p>
-      <div class="hero-links">
-        <a href="https://github.com/PruthvirajPhadatare" target="_blank">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="social-logo"> GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/pruthvirajphadatare" target="_blank">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="social-logo"> LinkedIn
-        </a>
-        <a href="assets/Pruthviraj_Phadatare_Resume.pdf" download class="btn">Download Resume</a>
-      </div>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Pruthviraj<span class="accent">.</span></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn" href="assets/resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h2>Hi, I'm <span class="accent">Pruthviraj Phadatare</span></h2>
+      <h3>DevOps & Cloud Engineer | AWS & OCI Certified</h3>
+      <p>Passionate about automating cloud infrastructure, CI/CD pipelines, and optimizing cloud environments for scalability and performance.</p>
+      <a href="#projects" class="btn">View My Work</a>
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
-  <section id="about" data-aos="zoom-in">
-    <div class="box-section hover-box">
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
       <h2>About Me</h2>
       <p>
-        AWS Cloud & DevOps Engineer with 1.5 years of hands-on experience in AWS, automation, and CI/CD. 
-        Skilled in Terraform, Jenkins, Kubernetes, and GitOps, with proven ability to accelerate deployments 
-        and enhance system reliability.
+        I'm a DevOps and AWS Cloud Engineer with 2+ years of experience in designing, automating, and maintaining cloud infrastructure.
+        I’ve worked extensively with AWS, OCI, Kubernetes, Docker, Terraform, Jenkins, and Ansible.  
+        I focus on delivering high-availability, secure, and efficient cloud deployments.
       </p>
       <ul>
-        <li>📞 Phone: +91 9175976336</li>
-        <li>📧 Email: pruthvirajphadatare@outlook.com</li>
-        <li>📍 Location: Pune, Maharashtra</li>
+        <li>🎯 Reduced deployment time by 30% by optimizing Jenkins pipelines.</li>
+        <li>⚙️ Experienced in AWS, OCI, and modern DevOps automation tools.</li>
+        <li>💡 Always exploring better ways to automate infrastructure as code.</li>
       </ul>
     </div>
   </section>
 
-  <!-- SKILLS SECTION -->
-  <section id="skills" data-aos="zoom-in">
-    <div class="box-section skills-box hover-box">
-      <h2>Skills & Technologies</h2>
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills & Tools</h2>
+      <div class="skill-grid">
+        <div>
+          <h3>Cloud Platforms</h3>
+          <p><b>AWS:</b> EC2, S3, RDS, CloudFront, IAM, VPC, CloudWatch</p>
+          <p><b>OCI:</b> Compute, VCN, Object Storage, Autonomous DB, OKE, Resource Manager, IAM, Monitoring, Logging, OCIR, Vault, API Gateway</p>
+        </div>
+        <div>
+          <h3>DevOps Tools</h3>
+          <p>Jenkins, Docker, Kubernetes, Terraform, Ansible, Git, GitHub Actions, Prometheus, Grafana</p>
+        </div>
+        <div>
+          <h3>Programming & OS</h3>
+          <p>Bash, Python (basic), Linux (Ubuntu, CentOS, Red Hat)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2>Certifications</h2>
+      <p>Recognized cloud certifications showcasing expertise in AWS and Oracle Cloud Infrastructure.</p>
+
+      <div class="cert-grid">
+        <!-- Oracle -->
+        <a class="cert" href="#" target="_blank" rel="noopener" data-cert="Oracle Data Platform Foundations Associate">
+          <img src="https://img.shields.io/badge/Oracle-Data%20Platform%20Foundations%20Associate-orange?logo=oracle&logoColor=white" alt="Oracle Data Platform Foundations Associate">
+        </a>
+        <a class="cert" href="#" target="_blank" rel="noopener" data-cert="OCI 2025 Certified Architect Associate">
+          <img src="https://img.shields.io/badge/Oracle-OCI%202025%20Architect%20Associate-orange?logo=oracle&logoColor=white" alt="OCI Architect Associate">
+        </a>
+        <a class="cert" href="#" target="_blank" rel="noopener" data-cert="OCI 2025 Certified Foundations Associate">
+          <img src="https://img.shields.io/badge/Oracle-OCI%202025%20Foundations%20Associate-orange?logo=oracle&logoColor=white" alt="OCI Foundations Associate">
+        </a>
+
+        <!-- AWS -->
+        <a class="cert" href="#" target="_blank" rel="noopener" data-cert="AWS Certified Cloud Practitioner">
+          <img src="https://img.shields.io/badge/AWS-Cloud%20Practitioner-blue?logo=amazon-aws&logoColor=white" alt="AWS Cloud Practitioner">
+        </a>
+        <a class="cert" href="#" target="_blank" rel="noopener" data-cert="AWS Certified Solutions Architect">
+          <img src="https://img.shields.io/badge/AWS-Solutions%20Architect-blue?logo=amazon-aws&logoColor=white" alt="AWS Solutions Architect">
+        </a>
+      </div>
+
+      <div id="cert-modal" class="modal hidden">
+        <div class="modal-inner">
+          <button id="modal-close">✕</button>
+          <h3 id="modal-title"></h3>
+          <p id="modal-body">Click "Open verification" to view your certification (if available).</p>
+          <a id="modal-link" href="#" target="_blank" rel="noopener" class="btn">Open verification</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Featured DevOps Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <h3>Automated Infrastructure Provisioning with Terraform</h3>
+          <p>Created reusable Terraform modules for cloud environments on AWS and OCI, automating VPC, subnet, and EC2 provisioning.</p>
+        </div>
+        <div class="project">
+          <h3>Kubernetes Cluster Deployment and Management</h3>
+          <p>Deployed and managed containerized applications on Kubernetes with Helm and custom CI/CD integration.</p>
+        </div>
+        <div class="project">
+          <h3>CI/CD Pipeline Optimization with Jenkins</h3>
+          <p>Developed declarative Jenkins pipelines improving deployment speed by 30% and ensuring secure credential access.</p>
+        </div>
+        <div class="project">
+          <h3>AWS Cost Optimization and Monitoring</h3>
+          <p>Implemented AWS CloudWatch dashboards and budgeting alerts to optimize resource utilization and cost efficiency.</p>
+        </div>
+        <div class="project">
+          <h3>Application Deployment Automation with Ansible</h3>
+          <p>Automated configuration management and deployment of multi-tier applications using Ansible playbooks.</p>
+        </div>
+        <div class="project">
+          <h3>Automated Infrastructure Deployment Using CloudFormation</h3>
+          <p>Implemented full-stack application deployment templates using AWS CloudFormation for consistent, versioned infrastructure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container contact">
+      <h2>Get in Touch</h2>
+      <p>If you’d like to collaborate or discuss opportunities, feel free to reach out!</p>
       <ul>
-        <li><strong>Cloud Services:</strong> EC2, ECS, EKS, Lambda, S3, EBS, EFS, RDS, DynamoDB, VPC, IAM, Secrets Manager, Certificate Manager, CloudFront, Route 53</li>
-        <li><strong>CI/CD & Automation:</strong> Jenkins, ArgoCD, GitHub Actions, AWS CodePipeline, Maven, Bash, Python, Ansible</li>
-        <li><strong>Infrastructure as Code:</strong> Terraform, CloudFormation</li>
-        <li><strong>Containers & Orchestration:</strong> Docker, Kubernetes (EKS, Kind, Minikube)</li>
-        <li><strong>Monitoring & Observability:</strong> CloudWatch, CloudTrail, SNS, Prometheus, Grafana</li>
-        <li><strong>Databases:</strong> SQL, MySQL, PostgreSQL, MongoDB</li>
-        <li><strong>Operating Systems:</strong> Linux (Ubuntu, Red Hat, CentOS)</li>
+        <li>📧 <a href="mailto:pruthvirajphadatare@outlook.com">pruthvirajphadatare@outlook.com</a></li>
+        <li>📱 <a href="tel:+919175976336">+91 9175976336</a></li>
+        <li>💻 <a href="https://github.com/PruthvirajPhadatare" target="_blank">GitHub</a></li>
+        <li>🔗 <a href="https://www.linkedin.com/in/pruthvirajphadatare" target="_blank">LinkedIn</a></li>
       </ul>
     </div>
   </section>
 
-  <!-- EXPERIENCE SECTION -->
-  <section id="experience" data-aos="zoom-in">
-    <div class="box-section hover-box">
-      <h2>Professional Experience</h2>
-      <div class="experience-item">
-        <h3>Intern DevOps Engineer | HisanLabs Pvt. Ltd.</h3>
-        <span>Oct 2023 – Mar 2024 | Wakad, Pimpri-Chinchwad</span>
-        <ul>
-          <li>Automated AWS environments using CloudFormation and shell scripts.</li>
-          <li>Built and maintained CI/CD pipelines with CodePipeline, Jenkins, and ArgoCD.</li>
-          <li>Deployed Dockerized applications on EKS using Helm and GitOps practices.</li>
-          <li>Strengthened cloud security with IAM, Secrets Manager, and Certificate Manager.</li>
-          <li>Automated workflows with Python and Bash, reducing manual effort.</li>
-          <li>Monitored infrastructure via CloudWatch, alerts with SNS, and tracked changes with CloudTrail.</li>
-          <li>Conducted AWS cost analysis and executed optimization strategies.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS SECTION -->
-  <section id="projects" data-aos="zoom-in">
-    <div class="box-section hover-box">
-      <h2>Projects</h2>
-      <div class="project-item">
-        <h3>Automated Infrastructure Provisioning and CI/CD Pipeline on AWS</h3>
-        <p><strong>Tools:</strong> Terraform, Jenkins, Docker, Maven, AWS (EC2, RDS, IAM, S3, VPC), CloudWatch, Git</p>
-        <ul>
-          <li>Designed Terraform modules to automate AWS provisioning, reducing setup time by 40%.</li>
-          <li>Built Jenkins pipeline with Docker & Maven to automate builds, cutting release cycles by 30%.</li>
-          <li>Configured CloudWatch monitoring and alerts for improved reliability.</li>
-        </ul>
-      </div>
-      <div class="project-item">
-        <h3>Cloud-Native Microservices Deployment with Kubernetes and GitOps</h3>
-        <p><strong>Tools:</strong> Kubernetes, AWS EKS, ArgoCD, GitHub Actions, Jenkins, Docker, ECR, Helm</p>
-        <ul>
-          <li>Delivered scalable microservices on AWS EKS using Docker & Helm charts.</li>
-          <li>Implemented GitOps workflows with ArgoCD and GitHub Actions, shortening release cycles by 50%.</li>
-          <li>Automated end-to-end workflows for consistent deployments.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION SECTION -->
-  <section id="education" data-aos="zoom-in">
-    <div class="box-section hover-box">
-      <h2>Education</h2>
-      <ul>
-        <li>M.Sc. in Computer Science | Pune University | 2021-23 | 77.45%</li>
-        <li>B.Sc. in Computer Science | Pune University | 2018-21 | 78.78%</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- CONTACT SECTION -->
-  <section id="contact" data-aos="zoom-in">
-    <div class="box-section hover-box">
-      <h2>Contact Me</h2>
-      <form action="https://formsubmit.co/pruthvirajphadatare@outlook.com" method="POST">
-        <input type="hidden" name="_next" value="https://pruthvirajphadatare.github.io/portfolio-website/">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer data-aos="fade-up">
-    <p>&copy; 2025 Pruthviraj Phadatare</p>
+  <footer>
+    <p>© 2025 Pruthviraj Phadatare | Built with ❤️ using HTML, CSS, and JS</p>
   </footer>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
 </body>
 </html>
